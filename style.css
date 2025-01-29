@@ -15,6 +15,46 @@ body {
     text-align: center;
 }
 
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
 main {
     flex: 1; /* Pushes the footer to the bottom when content is short */
 }
