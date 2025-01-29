@@ -3,13 +3,19 @@
 
 /* General Styles */
 body {
-    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes up at least full screen height */
     margin: 0;
     padding: 0;
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     text-align: center;
+}
+
+main {
+    flex: 1; /* Pushes the footer to the bottom when content is short */
 }
 
 /* Overlay to enhance text readability */
@@ -111,12 +117,13 @@ a:hover {
 }
 
 footer {
-    margin-top: auto;
     background-color: #0073e6;
     color: white;
     padding: 15px;
     text-align: center;
     font-size: 0.9rem;
+    margin-top: auto; /* Keeps footer at the bottom */
+    width: 100%;
 }
 
 /* Responsive Design */
