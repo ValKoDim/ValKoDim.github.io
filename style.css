@@ -1,73 +1,70 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
-/* General Styles */
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #f4f7f9;
     color: #333;
     text-align: center;
 }
+
 .overlay {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
     padding: 20px;
     border-radius: 8px;
     display: inline-block;
-    margin-top: 50px;
+    max-width: 600px; /* Prevents it from stretching too wide */
+    margin: 50px auto; /* Centers it properly */
+    text-align: center;
 }
 
 
-/* Container Styling */
-.container {
-    max-width: 800px;
-    margin: 50px auto;
+header {
     padding: 20px;
+    background-color: #0073e6;
+    color: white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-/* Header Styling */
-h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
     color: #0073e6;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
-h2 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: #444;
-    margin-bottom: 10px;
+.project-card p {
+    font-size: 1rem;
+    padding: 0 10px;
 }
 
-p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Navigation Links */
-a {
-    color: #0073e6;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #005bb5;
-    text-decoration: underline;
-}
-
-/* Button Styling */
 .button {
     display: inline-block;
-    padding: 12px 20px;
+    padding: 10px 15px;
+    margin: 15px 0;
     font-size: 1rem;
     font-weight: 600;
     color: white;
@@ -77,34 +74,8 @@ a:hover {
     cursor: pointer;
     transition: background 0.3s ease;
     text-decoration: none;
-    margin-top: 10px;
 }
 
 .button:hover {
     background: #005bb5;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        margin: 30px auto;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-}
-
-ul {
-    list-style: none;
-    padding: 0; /* Removes default left padding */
-    margin: 0; /* Optional: Removes extra margin */
-}
-
-ul li {
-    padding: 5px 0; /* Adds spacing between list items */
-}
-
