@@ -73,6 +73,7 @@ main {
 
 /* Header Styling */
 header {
+    margin-top: 80px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.85);
     color: #333;
