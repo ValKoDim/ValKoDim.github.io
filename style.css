@@ -88,3 +88,14 @@ a:hover {
         font-size: 1.5rem;
     }
 }
+
+ul {
+    list-style: none;
+    padding: 0; /* Removes default left padding */
+    margin: 0; /* Optional: Removes extra margin */
+}
+
+ul li {
+    padding: 5px 0; /* Adds spacing between list items */
+}
+
