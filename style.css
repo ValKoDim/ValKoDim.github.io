@@ -57,6 +57,7 @@ body {
 
 main {
     flex: 1; /* Pushes the footer to the bottom when content is short */
+    margin-top: 20px;
 }
 
 /* Overlay to enhance text readability */
