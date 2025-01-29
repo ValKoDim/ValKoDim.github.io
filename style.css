@@ -4,14 +4,15 @@
 /* General Styles */
 body {
     font-family: 'Inter', sans-serif;
-    display: flex;
-    flex-direction: column;
     margin: 0;
-    padding-top: 30px;
+    padding: 0;
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Navigation Bar */
@@ -21,7 +22,6 @@ body {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.85);
     padding: 15px 0;
-    margin-bottom: 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -55,19 +55,19 @@ body {
     text-decoration: underline;
 }
 
+/* Push content below the navbar */
 main {
-    flex: 1; /* Pushes the footer to the bottom when content is short */
-    margin-top: 20px;
+    padding-top: 80px; /* Ensures content does not overlap with navbar */
 }
 
 /* Overlay to enhance text readability */
 .overlay {
-    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 20px;
     border-radius: 8px;
     display: inline-block;
-    max-width: 600px; /* Prevents it from stretching too wide */
-    margin: 50px auto;
+    max-width: 600px;
+    margin: 80px auto 50px;
     text-align: center;
 }
 
@@ -75,10 +75,13 @@ main {
 header {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.85);
-    color: #0073e6;
+    color: #333;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 600;
+    border-radius: 8px;
+    max-width: 90%;
+    margin: 20px auto;
 }
 
 /* Project Grid Layout */
@@ -142,34 +145,28 @@ header {
 
 .button:hover {
     background: #005bb5;
-    color: rgba(255, 255, 255, 0.8); /* Dim white text instead of full disappearance */
+    color: rgba(255, 255, 255, 0.8);
 }
 
-/* Navigation Links */
-a {
-    color: #0073e6;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #005bb5;
-    text-decoration: underline;
-}
-
+/* Footer Styling */
 footer {
     background-color: rgba(255, 255, 255, 0.85);
     color: #333;
     padding: 15px;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: auto; /* Keeps footer at the bottom */
-    width: 100%;
+    border-radius: 8px;
+    max-width: 90%;
+    margin: 20px auto;
+    margin-top: auto;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
     .container {
         width: 90%;
         margin: 30px auto;
