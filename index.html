@@ -4,14 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Valentin Dimitrov - Automation Blog</title>
+    <title>My Projects</title>
 </head>
 <body>
-    <div class="overlay">
-        <h1>Welcome to My Automation Blog</h1>
-        <p>Here, I share my experiences with Google Apps Script, WooCommerce integrations, and workflow automation.</p>
-        <p>Check out my <a href="projects.html">Projects</a> and <a href="blog.html">Blog</a>.</p>
-    </div>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <main class="projects-grid">
+        <div class="project-card">
+            <img src="project1-thumbnail.jpg" alt="Project 1 Thumbnail">
+            <h2>Automated Product Quantity Synchronization for Multi-Store WooCommerce</h2>
+            <p>This automation ensures real-time inventory synchronization across multiple WooCommerce stores. 
+                When an order is placed on any connected store, the system automatically updates stock levels in a Google Spreadsheet and syncs the changes across all stores via the WooCommerce API.
+                It also performs periodic checks to detect and apply manual adjustments, eliminating stock mismatches and preventing overselling. 🚀</p>
+            <p>Technologies: HTML, CSS, JavaScript</p>
+            <a href="https://github.com/ValKoDim/apps-script-automation-portfolio/blob/main/product-sync/README.md" class="button">View Details</a>
+        </div>
+         <div class="project-card">
+            <img src="project2-thumbnail.jpg" alt="Project 2 Thumbnail">
+            <h2>Instant Proforma Invoice Generation for WooCommerce Orders</h2>
+            <p>A simple yet powerful tool that allows employees to instantly generate proforma invoices by entering an order ID into a custom UI.
+                The script pulls order details from WooCommerce, fills a Google Sheets template, converts it into a PDF, and sends it via email—automating a previously manual and time-consuming process. 📄⚡</p>
+            <p>Technologies: HTML, CSS, JavaScript</p>
+            <a href="https://github.com/ValKoDim/apps-script-automation-portfolio/blob/main/proforma-generator-web-app/README.md" class="button">View Details</a>
+        </div>
+         <div class="project-card">
+            <img src="project3-thumbnail.jpg" alt="Project 3 Thumbnail">
+            <h2>Real-Time WooCommerce Order Tracking & Automated Spreadsheet Backup</h2>
+            <p>This script automates order tracking by populating a Google Spreadsheet in real-time with new WooCommerce orders using webhooks.
+                Additionally, it creates a backup copy of the spreadsheet every midnight, ensuring that employees always work with the latest version while maintaining historical data.
+                The system also sends an email notification with a link to the updated spreadsheet. 🔄📊💡</p>
+            <p>Technologies: HTML, CSS, JavaScript</p>
+            <a href="https://github.com/ValKoDim/apps-script-automation-portfolio/blob/main/order-management/README.md" class="button">View Details</a>
+        </div>
+        <!-- Repeat for other projects -->
+    </main>
 </body>
-
 </html>
