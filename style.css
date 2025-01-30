@@ -309,7 +309,7 @@ footer {
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: row;
-        gap: 10px;
+        gap: 5px;
     }
     .container {
         width: 90%;
