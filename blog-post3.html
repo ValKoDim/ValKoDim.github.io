@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Order Tracking & Spreadsheet Backup Automation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main class="case-study">
+        <h1>Automating Order Tracking & Daily Spreadsheet Backups</h1>
+        
+        <section class="case-section">
+            <h2>1. Introduction: The Problem</h2>
+            <p>Before automation, employees manually tracked new orders and added them to a spreadsheet. This process was inefficient and led to several issues:</p>
+            <ul>
+                <li>Employees had to juggle order tracking with other tasks, causing delays.</li>
+                <li>Orders placed outside business hours had to be manually entered the next day, which took <strong>hours during busy seasons</strong>.</li>
+                <li>Every morning, employees manually copied and renamed the spreadsheet to create a backup, adding another <strong>time-consuming step</strong>.</li>
+            </ul>
+        </section>
+        
+        <section class="case-section">
+            <h2>2. The Solution</h2>
+            <p>To eliminate these inefficiencies, I built a <strong>Google Apps Script Web App</strong> that automates order tracking and spreadsheet backups. The system works as follows:</p>
+            <ul>
+                <li><strong>Receives webhooks</strong> from WooCommerce API when a new order is placed.</li>
+                <li><strong>Automatically updates the Google Spreadsheet</strong>, eliminating the need for manual tracking.</li>
+                <li><strong>Runs continuously</strong>, even outside business hours, ensuring real-time updates.</li>
+                <li><strong>At midnight, it creates a fresh copy</strong> of the spreadsheet, renaming it accordingly.</li>
+                <li><strong>Sends email notifications</strong> to employees with the updated table link for seamless workflow continuation.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Google Apps Script, Google Sheets API, WooCommerce API, JavaScript, Google Mail API (for email notifications), Postman (for API testing).</p>
+        </section>
+        
+        <section class="case-section">
+            <h2>3. Results & Impact</h2>
+            <ul>
+                <li>✅ <strong>Eliminated manual tracking</strong>, allowing employees to focus on higher-value tasks.</li>
+                <li>✅ <strong>Saved hours of work daily</strong>, especially during peak seasons.</li>
+                <li>✅ <strong>Reduced human errors</strong>, ensuring accurate order tracking and backup processes.</li>
+                <li>✅ <strong>Provided real-time updates</strong>, ensuring orders are logged immediately, even outside working hours.</li>
+            </ul>
+        </section>
+        
+        <section class="case-section">
+            <h2>4. Challenges & Learnings</h2>
+            <p>One of the main challenges was <strong>extracting only the necessary order data</strong> to fit into the spreadsheet correctly. Through debugging and fine-tuning the WooCommerce API response, I was able to filter and structure the data efficiently for seamless integration.</p>
+        </section>
+        
+        <section class="case-section">
+            <h2>5. Conclusion</h2>
+            <p>This automation <strong>revolutionized the order tracking process</strong>, saving valuable work hours while improving efficiency and accuracy. Future improvements could include <strong>integrating advanced reporting</strong> to provide employees with insights into order trends and performance tracking.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
