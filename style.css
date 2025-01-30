@@ -233,13 +233,10 @@ footer {
     transform: translateY(-5px);
 }
 
-.blog-image {
-    max-width: 100%; /* Ensures the image does not overflow */
+.blog-img {
+    width: 100%; /* Ensures the image stays within the card */
     height: auto;
-    display: block;
-    margin: 20px auto; /* Centers the image */
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #0073e6;
 }
 
 .blog-card h2 {
