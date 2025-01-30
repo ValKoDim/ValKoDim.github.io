@@ -327,8 +327,7 @@ footer {
     .projects-grid {
         grid-template-columns: repeat(1, minmax(250px, 1fr));
     }
-    .blog-grid {
+    div .blog-grid {
         grid-template-columns: repeat(1, minmax(250px, 1fr));
-        background-color: red;
     }
 }
