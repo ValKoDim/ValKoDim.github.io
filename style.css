@@ -208,16 +208,6 @@ footer {
     margin-top: auto;
 }
 
-/* Blog Image Fix */
-.blog-image {
-    max-width: 100%; /* Ensures the image does not overflow */
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Centers the image */
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 /* Blog Grid */
 .blog-grid {
     display: grid;
@@ -243,10 +233,13 @@ footer {
     transform: translateY(-5px);
 }
 
-.blog-card img {
-    width: 100%; /* Ensures the image stays within the card */
+.blog-image {
+    max-width: 100%; /* Ensures the image does not overflow */
     height: auto;
-    border-bottom: 2px solid #0073e6;
+    display: block;
+    margin: 20px auto; /* Centers the image */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .blog-card h2 {
