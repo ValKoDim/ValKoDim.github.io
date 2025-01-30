@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Proforma Invoice Automation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main class="case-study">
+        <h1>Automating Proforma Invoice Generation</h1>
+        
+        <section class="case-section">
+            <h2>1. Introduction: The Problem</h2>
+            <p>Before automation, employees had to <strong>manually create proforma invoices</strong> by copying order details from the website for each client who wanted to pay via bank transfer. This process was <strong>time-consuming, repetitive, and prone to errors</strong>, slowing down order processing and increasing the risk of incorrect invoices.</p>
+        </section>
+        
+        <section class="case-section">
+            <h2>2. The Solution</h2>
+            <p>To streamline this process, I built a <strong>Google Apps Script Web App</strong> that automates proforma invoice generation. The system works as follows:</p>
+            <ul>
+                <li><strong>Employee enters an order number</strong> into a simple web interface.</li>
+                <li><strong>The script fetches order details</strong> from the WooCommerce API.</li>
+                <li><strong>A proforma invoice is automatically generated</strong> using a set Google Sheets template.</li>
+                <li><strong>The invoice is saved as a PDF</strong> and sent to the employee for further processing.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Google Apps Script, WooCommerce API, JavaScript (for UI elements), Google Sheets (as a template system).</p>
+        </section>
+        
+        <section class="case-section">
+            <h2>3. Results & Impact</h2>
+            <ul>
+                <li>✅ <strong>Eliminated manual invoice creation</strong>, saving employees valuable time.</li>
+                <li>✅ <strong>Reduced errors</strong>, ensuring more accurate invoices.</li>
+                <li>✅ <strong>Simplified the process</strong>, making it accessible even for non-technical employees.</li>
+            </ul>
+        </section>
+        
+        <section class="case-section">
+            <h2>4. Challenges & Learnings</h2>
+            <p>The biggest challenge was <strong>creating the web-based UI</strong> since front-end development was a new area for me. However, I overcame this by learning and implementing simple HTML and JavaScript elements to create an easy-to-use interface for employees.</p>
+        </section>
+        
+        <section class="case-section">
+            <h2>5. Conclusion</h2>
+            <p>This solution transformed the invoicing workflow, making it <strong>faster, more accurate, and less frustrating</strong> for employees. With potential future improvements, such as automatic email sending of the invoices, this system can further enhance efficiency and reduce manual work.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
