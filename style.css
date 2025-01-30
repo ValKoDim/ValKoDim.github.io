@@ -260,6 +260,47 @@ footer {
     color: #555;
 }
 
+.case-study {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.case-study h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.case-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.case-section h2 {
+    font-size: 1.5rem;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.case-section p,
+.case-section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.case-section ul {
+    padding-left: 20px;
+}
+
+.case-section ul li {
+    margin-bottom: 8px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
