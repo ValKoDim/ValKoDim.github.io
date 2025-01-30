@@ -15,6 +15,14 @@ body {
     min-height: 100vh;
 }
 
+/* Adding overlay to improve readability */
+.overlay {
+    background: rgba(255, 255, 255, 0.8); /* Soft white overlay */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
 /* Navigation Bar */
 .navbar {
     display: flex;
@@ -38,246 +46,75 @@ body {
     gap: 20px;
 }
 
-.navbar ul li {
-    display: inline;
-}
-
 .navbar ul li a {
     text-decoration: none;
-    color: #0073e6;
+    color: #005bb5;
     font-weight: 600;
-    padding: 10px 20px;
     transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: #005bb5;
-    text-decoration: underline;
+    color: #ff6600;
 }
 
-/* Push content below the navbar */
-main {
-    padding-top: 80px; /* Ensures content does not overlap with navbar */
-}
-
-/* Overlay to enhance text readability */
-.overlay {
-    background-color: rgba(255, 255, 255, 0.85);
+/* Blog & Project Cards */
+.blog-card, .project-card {
+    background: white;
+    border-radius: 10px;
     padding: 20px;
-    border-radius: 8px;
-    display: inline-block;
-    max-width: 600px;
-    margin: 80px auto 50px;
-    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
-/* Header Styling */
-header {
-    margin-top: 80px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
-    color: #333;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 600;
-    border-radius: 8px;
-    max-width: 90%;
-    margin: 80px auto 20px;
+.blog-card:hover, .project-card:hover {
+    transform: scale(1.02);
 }
 
-/* Project Grid Layout */
+/* Project Cards Grid Layout */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-/* Project Cards */
 .project-card {
-    background: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    padding: 15px;
     text-align: left;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.03);
 }
 
 .project-card img {
     width: 100%;
-    height: auto;
-    border-bottom: 2px solid #0073e6;
-}
-
-.project-card h2 {
-    font-size: 1.5rem;
-    color: #0073e6;
-    margin: 10px 0;
-}
-
-.project-card p {
-    font-size: 1rem;
-    padding: 0 10px;
-    color: #555;
+    border-radius: 8px;
 }
 
 /* Button Styling */
 .button {
-    display: inline-block;
-    padding: 10px 15px;
-    margin: 15px 0;
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
     background: #0073e6;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease, color 0.3s ease;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s ease;
 }
 
 .button:hover {
     background: #005bb5;
-    color: rgba(255, 255, 255, 0.8);
 }
 
-/* Contact Form Styling */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form label {
-    font-weight: 600;
-    margin-top: 10px;
-    text-align: left;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact-form button {
-    margin-top: 15px;
-    padding: 10px;
-    font-size: 1rem;
-    font-weight: 600;
-    background: #0073e6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-    background: #005bb5;
-}
-
-
-/* Footer Styling */
-footer {
-    background-color: rgba(255, 255, 255, 0.85);
-    color: #333;
-    padding: 15px;
-    text-align: center;
-    font-size: 0.9rem;
-    border-radius: 8px;
-    max-width: 90%;
-    margin: 20px auto;
-    margin-top: auto;
-}
-
-/* Blog Image Fix */
-.blog-image {
-    max-width: 100%; /* Ensures the image does not overflow */
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Centers the image */
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Blog Grid */
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Blog Cards */
-.blog-card {
-    background: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    padding: 15px;
-    text-align: left;
-}
-
-.blog-card:hover {
-    transform: translateY(-5px);
-}
-
-.blog-card img {
-    width: 100%; /* Ensures the image stays within the card */
-    height: auto;
-    border-bottom: 2px solid #0073e6;
-}
-
-.blog-card h2 {
-    font-size: 1.5rem;
-    color: #0073e6;
-    margin: 10px 0;
-}
-
-.blog-card p {
-    font-size: 1rem;
-    padding: 0 10px;
-    color: #555;
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .container {
-        width: 90%;
-        margin: 30px auto;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
+/* Thumbnail Hover Effect */
+.project-card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
