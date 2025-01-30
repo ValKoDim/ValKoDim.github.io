@@ -305,7 +305,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar ul {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
     }
     .container {
