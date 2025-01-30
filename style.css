@@ -328,6 +328,7 @@ footer {
         grid-template-columns: repeat(1, minmax(250px, 1fr));
     }
     .blog-grid {
-        grid-template-columns: repeat(1, minmax(250px, 1fr)) !important;
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+        background-color: red;
     }
 }
