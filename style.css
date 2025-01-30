@@ -262,6 +262,7 @@ footer {
 }
 
 .case-study {
+    margin-top: 80px;
     max-width: 800px;
     margin: auto;
     padding: 20px;
