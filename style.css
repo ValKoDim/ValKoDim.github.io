@@ -307,6 +307,9 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: repeat(1, minmax(250px, 1fr)) !important;
+    }
     .navbar ul {
         flex-direction: row;
         gap: 10px;
@@ -327,7 +330,4 @@ footer {
     .projects-grid {
         grid-template-columns: repeat(1, minmax(250px, 1fr));
     }
-  .blog-grid {
-    grid-template-columns: repeat(1, minmax(250px, 1fr)) !important;
-}
 }
