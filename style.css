@@ -306,7 +306,7 @@ footer {
 
 
 /* Responsive Design */
-@media all (max-width: 768px) {
+@media (max-width: 768px) {
     .blog-grid {
         grid-template-columns: repeat(1, 1fr);
     }
