@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: WooCommerce Inventory Sync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main class="case-study">
+        <h1>Automating WooCommerce Inventory Synchronization</h1>
+        
+        <section class="case-section">
+            <h2>1. Introduction: The Problem</h2>
+            <p>Before implementing automation, the company manually updated stock levels across multiple WooCommerce websites, as all stores shared a common inventory. This manual process was time-consuming, especially on high-order days, leading to <strong>delays, overselling, and customer dissatisfaction</strong>. The challenge was to synchronize stock levels across all sites <strong>in real-time</strong> and ensure automatic updates whenever a sale occurred.</p>
+        </section>
+        
+        <section class="case-section">
+            <h2>2. The Solution</h2>
+            <p>I developed a <strong>Google Apps Script Web App</strong> that integrates with the WooCommerce API to automate stock updates. The system works as follows:</p>
+            <ul>
+                <li><strong>Webhooks from WooCommerce</strong> send real-time order updates to the script.</li>
+                <li><strong>The script updates stock levels</strong> in a Google Spreadsheet, serving as a live inventory tracker.</li>
+                <li><strong>Every 10 minutes, the script checks for changes</strong> in the spreadsheet and updates all connected WooCommerce websites accordingly.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Google Apps Script, WooCommerce API, JavaScript, Postman (for testing and debugging API requests).</p>
+        </section>
+        
+        <section class="case-section">
+            <h2>3. Results & Impact</h2>
+            <ul>
+                <li>✅ <strong>Reduced manual work by 90%</strong>, freeing up employees for higher-value tasks.</li>
+                <li>✅ <strong>Prevented overselling</strong>, as stock updates now happen automatically every 10 minutes.</li>
+                <li>✅ <strong>Simplified stock restocking</strong>, requiring employees only to update the spreadsheet, with all websites adjusting accordingly.</li>
+            </ul>
+        </section>
+        
+        <section class="case-section">
+            <h2>4. Challenges & Learnings</h2>
+            <p>The biggest challenge was handling both <strong>simple and variable products</strong> in WooCommerce. The solution involved dynamically adjusting the API request URL based on product type, ensuring accurate stock updates across different product structures.</p>
+        </section>
+        
+        <section class="case-section">
+            <h2>5. Conclusion</h2>
+            <p>This solution <strong>streamlined inventory management</strong>, reducing errors and delays while improving customer satisfaction. With further enhancements, such as reducing the update interval below 10 minutes or integrating AI-driven stock predictions, the automation could become even more powerful.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
